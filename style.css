@@ -1455,11 +1455,233 @@ footer#footer {
 }
 
 /* ===================================
-   MOBİLDE PROJE SAYFALARINDA LOGOYU GİZLE
+   MOBİL OPTİMİZASYON DÜZELTMELERİ
    =================================== */
 
+@media only screen and (max-width: 768px) {
+  .main-slider .banner-content {
+    width: 85% !important;
+    margin-top: 120px !important;
+    padding: 0 15px;
+  }
+
+  .main-slider .banner-content h2.banner-title {
+    font-size: 0.85em !important;
+    padding: 6px 15px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .main-slider .banner-content h3.banner-title {
+    font-size: 2.2em !important;
+    line-height: 1.1 !important;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-slider .banner-content {
+    width: 90% !important;
+    margin-top: 100px !important;
+  }
+
+  .main-slider .banner-content h2.banner-title {
+    font-size: 0.75em !important;
+    padding: 5px 12px !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .main-slider .banner-content h3.banner-title {
+    font-size: 1.8em !important;
+    line-height: 1.15 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-logo {
+    width: 80px !important;
+    height: 80px !important;
+    padding: 20px !important;
+  }
+
+  .main-logo a {
+    font-size: 2.5em !important;
+  }
+
+  .main-logo.scrolled {
+    width: 60px !important;
+    height: 60px !important;
+    padding: 15px !important;
+  }
+
+  .arrow-up {
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-bottom: 12px solid var(--dark-color) !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-logo {
+    width: 70px !important;
+    height: 70px !important;
+    padding: 15px !important;
+  }
+
+  .main-logo a {
+    font-size: 2em !important;
+  }
+
+  .main-logo.scrolled {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-slider .slick-slide {
+    height: 65vh !important;
+  }
+
+  .main-slider .slider-item {
+    height: 65vh !important;
+  }
+}
+
 @media only screen and (max-width: 580px) {
-  body.project-page .main-logo {
-    display: none !important;
+  .main-slider .slick-slide {
+    height: 55vh !important;
+  }
+
+  .main-slider .slider-item {
+    height: 55vh !important;
+  }
+
+  .main-slider .slider-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #intro .button-container button.slick-arrow {
+    padding: 20px 25px !important;
+    font-size: 1.8em !important;
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #intro .button-container button.slick-arrow {
+    padding: 18px 22px !important;
+    font-size: 1.6em !important;
+    min-width: 55px;
+    min-height: 55px;
+  }
+}
+
+/* Project Info Grid - Mobil Düzeltme */
+@media only screen and (max-width: 768px) {
+  .project-info-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+    margin: 40px 0 !important;
+  }
+
+  .info-item {
+    padding: 15px !important;
+  }
+
+  .info-item h5 {
+    font-size: 0.8em !important;
+    margin-bottom: 8px !important;
+  }
+
+  .info-item p {
+    font-size: 1em !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .project-info-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .padding-large {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .side-nav-bar {
+    margin: 25px 20px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .side-nav-bar {
+    margin: 20px 15px !important;
+  }
+
+  .side-nav-bar .menu-btn {
+    width: 22px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-slider .banner-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .main-slider .slick-slide {
+    height: 100vh !important;
+  }
+
+  .main-slider .banner-content {
+    margin-top: 80px !important;
+  }
+
+  .main-slider .banner-content h3.banner-title {
+    font-size: 2em !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-slider .banner-content h3.banner-title {
+    font-size: 1.6em !important;
+  }
+
+  .main-slider .banner-content h2.banner-title {
+    font-size: 0.7em !important;
+  }
+
+  .main-logo {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  .main-logo a {
+    font-size: 1.8em !important;
   }
 }
