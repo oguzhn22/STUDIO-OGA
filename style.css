@@ -1560,11 +1560,19 @@ footer#footer {
     height: 55vh !important;
   }
 
-  .main-slider .slider-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  .main-slider .slider-item img,
+  .main-slider .jarallax-img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
     max-width: none !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .jarallax {
+    background-attachment: scroll !important;
   }
 }
 
@@ -1589,7 +1597,6 @@ footer#footer {
   }
 }
 
-/* Project Info Grid - Mobil Düzeltme */
 @media only screen and (max-width: 768px) {
   .project-info-grid {
     grid-template-columns: repeat(2, 1fr) !important;
